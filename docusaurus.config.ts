@@ -45,7 +45,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/trackyfi-icon.png',
+    image: 'img/og-image.png',
     colorMode: {
       disableSwitch: true,
       defaultMode: 'dark',
