@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'TrackyFi',
   tagline: 'Personal finance tracker for India',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -54,7 +54,7 @@ const config: Config = {
       title: 'TrackyFi',
       logo: {
         alt: 'TrackyFi Logo',
-        src: 'img/logo.svg',
+        src: 'img/trackyfi-icon.png',
       },
       items: [],
     },

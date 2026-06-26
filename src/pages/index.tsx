@@ -54,11 +54,6 @@ export default function Home(): ReactNode {
         {/* Hero */}
         <section className={styles.hero}>
           <div className={styles.heroInner}>
-            <img
-              src="img/screenshots/onboarding.png"
-              alt="TrackyFi app icon"
-              className={styles.appIcon}
-            />
             <div className={styles.badge}>Personal Finance · Made for India</div>
             <h1 className={styles.heroTitle}>
               Track your <span className={styles.accent}>expenses</span> and{' '}
