@@ -35,9 +35,7 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-        },
+        docs: false,
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
@@ -47,10 +45,10 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+      disableSwitch: true,
+      defaultMode: 'dark',
     },
     navbar: {
       title: 'TrackyFi',
@@ -58,14 +56,7 @@ const config: Config = {
         alt: 'TrackyFi Logo',
         src: 'img/logo.svg',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Docs',
-        },
-      ],
+      items: [],
     },
     footer: {
       style: 'dark',
@@ -74,17 +65,13 @@ const config: Config = {
           title: 'App',
           items: [
             {
-              label: 'Docs',
-              to: '/docs/intro',
-            },
-            {
               label: 'Privacy Policy',
               to: '/privacy',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} GokulnathP. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} GokulnathP.`,
     },
     prism: {
       theme: prismThemes.github,
