@@ -30,6 +30,19 @@ const features = [
   },
 ];
 
+const dailyScreenshots = [
+  {src: 'img/screenshots/add-expense.png', caption: 'Add Expense'},
+  {src: 'img/screenshots/history.png', caption: 'History'},
+  {src: 'img/screenshots/stats.png', caption: 'Analytics'},
+];
+
+const wealthScreenshots = [
+  {src: 'img/screenshots/wealth-dashboard.png', caption: 'Dashboard'},
+  {src: 'img/screenshots/wealth-portfolio.png', caption: 'Portfolio'},
+  {src: 'img/screenshots/wealth-calendar.png', caption: 'Cash Flow'},
+  {src: 'img/screenshots/wealth-analytics.png', caption: 'Analytics'},
+];
+
 export default function Home(): ReactNode {
   return (
     <Layout
@@ -41,6 +54,11 @@ export default function Home(): ReactNode {
         {/* Hero */}
         <section className={styles.hero}>
           <div className={styles.heroInner}>
+            <img
+              src="img/screenshots/onboarding.png"
+              alt="TrackyFi app icon"
+              className={styles.appIcon}
+            />
             <div className={styles.badge}>Personal Finance · Made for India</div>
             <h1 className={styles.heroTitle}>
               Track your <span className={styles.accent}>expenses</span> and{' '}
@@ -77,9 +95,29 @@ export default function Home(): ReactNode {
         <section className={styles.screenshots}>
           <div className={styles.container}>
             <h2 className={styles.sectionTitle}>See it in action</h2>
-            <div className={styles.screenshotGrid}>
-              {/* Screenshots will be added here */}
-              <div className={styles.screenshotPlaceholder}>Screenshots coming soon</div>
+
+            <div className={styles.screenshotGroup}>
+              <h3 className={styles.screenshotGroupLabel}>Daily Expenses</h3>
+              <div className={styles.screenshotRow}>
+                {dailyScreenshots.map((s) => (
+                  <div key={s.src} className={styles.screenshotItem}>
+                    <img src={s.src} alt={s.caption} className={styles.screenshotImg} />
+                    <span className={styles.screenshotCaption}>{s.caption}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className={styles.screenshotGroup}>
+              <h3 className={styles.screenshotGroupLabel}>Wealth Management</h3>
+              <div className={styles.screenshotRow}>
+                {wealthScreenshots.map((s) => (
+                  <div key={s.src} className={styles.screenshotItem}>
+                    <img src={s.src} alt={s.caption} className={styles.screenshotImg} />
+                    <span className={styles.screenshotCaption}>{s.caption}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
