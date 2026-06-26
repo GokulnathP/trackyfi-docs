@@ -65,11 +65,6 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {
-          href: 'https://github.com/gokulnathp/trackyfi',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
@@ -85,15 +80,6 @@ const config: Config = {
             {
               label: 'Privacy Policy',
               to: '/privacy',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/gokulnathp/trackyfi',
             },
           ],
         },
