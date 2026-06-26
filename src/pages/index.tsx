@@ -54,11 +54,12 @@ export default function Home(): ReactNode {
         {/* Hero */}
         <section className={styles.hero}>
           <div className={styles.heroInner}>
-            <div className={styles.badge}>Personal Finance · Made for India</div>
-            <h1 className={styles.heroTitle}>
+            <h1 className={styles.heroTitle}>TrackyFi</h1>
+            <div className={styles.badge}>Finance Tracker · Made for India</div>
+            <h2 className={styles.heroSubheading}>
               Track your <span className={styles.accent}>expenses</span> and{' '}
               <span className={styles.accent}>wealth</span> in one place
-            </h1>
+            </h2>
             <p className={styles.heroSubtitle}>
               TrackyFi helps you log daily expenses, manage investments across FD, PPF, EPF,
               NPS, Mutual Funds, and Chit Funds — all stored privately on your device and
