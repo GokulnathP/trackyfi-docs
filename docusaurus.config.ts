@@ -45,7 +45,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/trackyfi-icon.png',
     colorMode: {
       disableSwitch: true,
       defaultMode: 'dark',
@@ -67,6 +67,15 @@ const config: Config = {
             {
               label: 'Privacy Policy',
               to: '/privacy',
+            },
+          ],
+        },
+        {
+          title: 'Contact',
+          items: [
+            {
+              label: '4gokul2000@gmail.com',
+              href: 'mailto:4gokul2000@gmail.com',
             },
           ],
         },
